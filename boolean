@@ -1,0 +1,37 @@
+# Expressões Booleanas
+# (and, or, not) e (if, else, elif), todas essas são usadas para verificar uma condição, vamos começar a ver essas expressões de um modo mais
+complexo.
+
+$ AND {O and dará o resultado True apenas se ambas as expressões forem True, caso contrário, ela será False.}
+
+$ OR {O or dará o resultado True se ao menos uma das expressões for True - somente se ambas forem False ele dará o resultado False 
+(note que, se ambos forem True, o or continuará dando True).}
+
+$ NOT {O operador booleano not utiliza um operador booleano para alterá-lo: então, not True é False e vice-versa.}
+===========================================================================================================================================
+Quiz Booleano 
+Imagine um programa de controle de tráfego aéreo que rastreie três variáveis, "altitude", "velocidade" e "propulsão" que, para um 
+determinado avião, possuem os valores especificados abaixo.
+
+altitude = 1000
+velocidade = 250
+propulsao = "helice"
+
+print (altitude < 1000 and velocidade > 100)
+False
+print(propulsao == "Jet " or propulsao == "Turboprop") and velocidade < 300 and altitude > 2000
+False
+print (not (velocidade> 400 and propulsao =="helice"))
+True
+print (altitude> 500 e velocidade> 100) ou não propulsão =" helice "
+True
+
+===========================================================================================================================================
+
+
+
+Ambos True e False são booleanos, mas não é uma boa ideia usar if True: ou if False:.
+Os operadores booleanos and, or e not tem significados específicos que não são exatamente os mesmos que seus significados comuns - 
+não caia na armadilha de escrever o inglês simples, a menos que também seja válido no Python!
+Não compare uma variável booleana com == True ou == False - é mais legível evitar tal comparação. Se você quiser verificar 
+se um booleano é False, você pode usar not, por exemplo
