@@ -1,0 +1,20 @@
+def scores_to_rating(score1,score2,score3,score4,score5):
+    """
+    Transforma cinco notas (score) em uma avaliação a partir
+    dos três valores médios das cinco notas, atribuindo a
+    essa média uma avaliação escrita.
+    """
+    #ETAPA 1 converter as notas em números
+    score1 =  10
+    score2 =  9.5
+    score3 =  9
+    score4 =  7
+    score5 =  8
+
+    #ETAPA 2 e ETAPA 3 encontrar a média das três notas médias
+    average_score = sum_of_middle_three (score1,score2,score3,score4,score5) / 3
+
+    #ETAPA 4 transformar a nota média em uma avaliação
+    rating = score_to_rating_string(average_score)
+
+    return rating
